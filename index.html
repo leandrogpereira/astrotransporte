@@ -1,74 +1,204 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<title>Astro Locação e Transportes</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="icon" href="img/favicon.png">
-</head>
-<body>
-	<div class="container-fluid">
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Brand</a>
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+  	<title>Astro Locação e Transportes</title>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <div class="content">
+    	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container" role="main">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a href="index.html"><img id="img-logo" src="img/logoheader.png"></a>
+          <!-- <span class="navbar-brand"></span> -->
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="sobre.html"> Quem Somos </a></li>
+              <li class="dropdown">
+                <a href="servicos.html"> Serviços </a>
+                <!-- class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" -->
+              </li>
+              <li class="dropdown">
+                <a href="servicos.html"> Frota </a>
+                <!-- class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" -->
+              </li>
+              <li class="dropdown">
+                <a href="clientes.html"> Nossos Clientes </a>
+                <!-- class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" -->
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="contato.html"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Fale Conosco </a>
+                <!-- class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container corpo" role="main">
+        <div class="carrosel">
+        	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <a href="#">
+                  <img src="img/caminhao_cacamba.jpg" alt="ALT System" class="img-carrosel">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/carrosel.png" alt="Caminhão da frota" class="img-carrosel">
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="img/clientes.png" alt="Caminhão da frota" class="img-carrosel">
+                </a>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="text-middle">
+          <p>Empresa consolidada no mercado e com fortes indicações! <br> São mais de 10 anos de experiência em atuação no transporte de cargas e prestação de serviços no Brasil inteiro.</p>          
+        </div>
+
+        <div class="page-header">
+          <h1>Especialista em transporte de cargas secas:</h1>
+        </div>
+
+        <div class="row thumbs">
+          <div class="col-md-4">
+            <img data-src="holder.js/200x200" class="img-circle" alt="200x200" style="width: 200px; height: 200px;" src="img/brita.png" data-holder-rendered="true"> 
+            <p class="thumbs-text">Brita</p>
+          </div>
+          <div class="col-md-4">
+            <img data-src="holder.js/200x200" class="img-circle" alt="200x200" style="width: 200px; height: 200px;" src="img/sucata.jpg" data-holder-rendered="true">
+            <p class="thumbs-text">Sucata</p>
+          </div>
+          <div class="col-md-4">
+            <img data-src="holder.js/200x200" class="img-circle" alt="200x200" style="width: 200px; height: 200px;" src="img/demais.jpg" data-holder-rendered="true">
+            <p class="thumbs-text">Demais materiais</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid row-text-a">  
+      <div class="container">
+        <div class="row row-text">
+          <a href="frota.html">
+            <div class="col-md-5">
+              <img data-src="holder.js/200x200" class="img-rounded" alt="200x200" style="width: 398px; height: 269px;" src="img/rodo.jpg" data-holder-rendered="true"> 
+            </div>
+            <div class="col-md-7">
+              <p>ALT trabalha com transporte rodoviário seguro e garantido com profissionais e veículos da mais alta qualidade.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid row-text-b">  
+      <div class="container">
+        <div class="row row-text">
+          <a href="clientes.html">
+            <div class="col-md-7">
+              <p>Parceria e resultados são as chaves para o sucesso da nossa organização. Conheça nossos parceiros.</p>
+            </div>
+            <div class="col-md-5">
+              <img data-src="holder.js/200x200" class="img-rounded" alt="200x200" style="width: 398px; height: 269px;" src="img/client.jpg" data-holder-rendered="true"> 
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid row-text-a">  
+      <div class="container">
+        <div class="row row-text">
+          <a href="contato.html">
+            <div class="col-md-5">
+              <img data-src="holder.js/200x200" class="img-rounded" alt="200x200" style="width: 398px; height: 269px;" src="img/orcamento.jpg" data-holder-rendered="true"> 
+            </div>
+            <div class="col-md-7">
+              <p>Entre em contato e faça seu orçamento conforme a sua necessidade.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+	<div class="container-fluid contact">
+		<div class="container">
+		  <div class="row contact-footer">
+		    <div class="col-md-4">
+		      <div class="span-icon"><span class="glyphicon glyphicon-phone-alt"></span></div>
+		      <p><strong>Telefone:</strong> (12)3645-2017</p>
+		  	  <a class="mail" href="mailto:contato@altsystem.com">contato@altsystem.com</a>
 		    </div>
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">Link</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">One more separated link</a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		      <form class="navbar-form navbar-left">
-		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search">
-		        </div>
-		        <button type="submit" class="btn btn-default">Submit</button>
-		      </form>
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
+		    <div class="col-md-4">
+		      <div class="span-icon"><span class="glyphicon glyphicon-map-marker"></span></div>
+		      <p><strong>Endereço:</strong> Rua Antônia Bicudo Salgado Nº: 282 Bairro Socorro - Pindamonhangaba/SP
+		    </div>
+		    <div class="col-md-4">
+		      <div id="map"></div>
+		    </div> 
+		  </div>
+		</div>  
 	</div>
-
-	<!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
-    <script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+  	  <footer class="footer">
+  		<br>
+      	<p style="color:white" align="center">ALT Systems © 2016 - 2017</p>
+      </footer>
+      <script>
+        function initMap() {
+          var uluru = {lat: -22.950114, lng: -45.487255};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqYGmlzw3Ue6SFrlUXFIHWPtPdFpy9ERc&callback=initMap"></script>
+  	  <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+      <script src="js/bootstrap.min.js"></script>
+    </footer>
+  </body>
+  </html>
